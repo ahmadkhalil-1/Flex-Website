@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+}
+header{
+
+    background-color: rgb(70, 97, 19);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: white;
+    padding: 10px 0;
+}
+header ul{
+
+    list-style: none;
+    display: flex;
+    
+}
+header li{
+
+    padding: 10px;
+}
+header li a{
+    text-decoration: none;
+    color: rgb(233, 232, 232);
+    font-weight: bold;
+}
+header #name{
+
+    margin:0 auto;
+    font-size: large;
+    font-weight: bold;
+}
+main{
+    display: flex;
+}
+main ul,h3{
+    padding: 10px 0;
+}
+main li{
+
+    padding: 10px 10px;
+    display: block;
+    border-bottom: 1px solid rgb(36, 34, 34);
+    
+}
+aside{
+    flex: 0 0 20vw;
+    background-color: rgb(231, 231, 102);
+}
+aside img{
+    width: 100%;
+    height: 300px;
+    padding: 30px 10px;
+}
+article{
+    padding: 10px;
+    text-align: justify;
+}
+
+#service{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#service img{
+
+    width: 100%;
+    padding-bottom: 10px;
+}
+.serbox{
+
+    border: 3px solid #eee;
+    flex-basis: 32%;
+    max-width: 370px;
+    padding: 10px; 
+}
+.serbox #heading,#para,#btn{
+
+    padding-bottom:10px ;
+}
+ .serbox #btn{
+
+    margin-left: 80px;
+}
+button{
+    padding: 10px 20px;
+    background-color: lightblue;
+}
+
+footer{
+
+    display: flex;
+    padding: 10px 0;
+    background-color: rgb(70, 97, 19);
+}
+footer ul{
+    list-style: none;
+    margin: auto;
+}
+footer li{
+    color: white;
+}
+
+@media screen and (max-width:1020px){
+
+    aside{
+        flex: 0 0 30vw;
+    }
+
+    .serbox{
+
+        border: 2px solid #eee;
+        flex-basis: 50%;
+    }
+       
+}
+@media screen and (max-width:660px){
+
+    header{
+        flex-direction: column;
+    }
+    #name{
+        order: -1;
+    }
+    article{
+        order: -1;
+    }
+    main{
+        flex-direction: column;
+    }
+       
+}
+@media screen and (max-width:500px){
+
+    #service{
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    article{
+        text-align: center;
+    }
+    article p{
+        text-align: justify;
+    }
+    button{
+        margin-left:-80px ;
+    }
+    aside li{
+        text-align: center;
+    }
+       
+}
